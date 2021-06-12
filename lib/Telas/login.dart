@@ -72,7 +72,7 @@ class Login extends StatelessWidget {
                   width: 350,
                   child: ElevatedButton(
                     onPressed: () {
-                      context.router.replace(Appmain());
+                      context.router.push(Appmain());
                     },
                     child: Text(
                       'Log in',
@@ -86,7 +86,7 @@ class Login extends StatelessWidget {
                   width: 350,
                   child: ElevatedButton(
                     onPressed: () {
-                      context.router.push(Formulario());
+                      context.router.replaceNamed("/Formulario");
                     },
                     child: Text(
                       'Sign Up',
